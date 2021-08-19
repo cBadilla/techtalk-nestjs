@@ -9,7 +9,7 @@ import { BookSchema } from './books/schemas/book.schema';
 @Module({
   imports: [
     MongooseModule.forRoot(
-      'mongodb+srv://dbCesar:xL828tC8CKdGUE1f@tests.p5ed7.mongodb.net/library?retryWrites=true&w=majority',
+      'Dirección de base de datos',
     ),
     MongooseModule.forFeature([{ name: 'Book', schema: BookSchema }]),
   ],
